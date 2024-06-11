@@ -1,7 +1,11 @@
 <!-- button triger -->
 <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</button>
 <!-- Menampilkan flashh data (pesan saat data berhasil disimpan)-->
+
+
+
 <?php
+
 
 if (session()->getFlashdata('message')) : ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -60,22 +64,41 @@ if (session()->getFlashdata('message')) : ?>
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Data Angkatan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-closee">X</button>
             </div>
+            <script>
+
+            </script>
+
             <div class="modal-body">
                 <form action="<?= base_url('angkatan/create') ?>" method="POST">
-                    <input type="text" name="name" placeholder="Nama angkatan" class="form-control mb-2" required>
-                    <input type="text" name="biaya" placeholder="biaya" class="form-control mb-2" required>
-
+                    <input type="text" name="name" placeholder="Nama angkatan" class="form-control mb-2  <?= (validation_show_error('name')) ? 'is-invalid' : ''; ?>" value="<?= set_value('name'); ?>" autofocus required>
+                    <small class="text-danger invalid-feedback">
+                        <?= validation_show_error('name') ?>
+                    </small>
+                    <input type="text" name="biaya" placeholder="biaya" class="form-control mb-2 <?= (validation_show_error('biaya')) ? 'is-invalid' : ''; ?>" required>
+                    <small class="text-danger invalid-feedback" value="<?= set_value('biaya'); ?>">
+                        <?= validation_show_error('biaya') ?>
+                    </small>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" id="btn-closee" data-bs-dismiss="modal">Close</button>
                 <button type="Submit" name="simpan" class="btn btn-primary">Simpan</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    <?php if (session()->getFlashdata('showModal')) : ?>
+        var showModal = "<?= session()->getFlashdata('showModal') ?>";
+        $('#' + showModal).modal('show');
+        $('#btn-closee').click(function() {
+            $('#' + showModal).modal('hide');
+        });
+    <?php endif; ?>
+</script>
 
 
 

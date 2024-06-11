@@ -12,16 +12,21 @@ class Angkatan extends BaseController
     public function __construct()
     {
         $this->angkatan = new Angkatan_model();
+        helper(['form']);
     }
     public function index()
     {
+        session();
         $data = [
             'title' => 'Angkatan',
             'dataAngkatan' => $this->angkatan->getAll(),
+            'validation' => \Config\Services::validation(),
+            'showModal' => session()->getFlashdata('showModal'),
+            'editModal' => session()->getFlashdata('editModal')
+
         ];
         echo view('templates/header', $data);
-        echo view('angkatan/angkatan');
-
+        echo view('angkatan/angkatan', $data);
         echo view('templates/footer');
     }
 
@@ -31,7 +36,8 @@ class Angkatan extends BaseController
             'name' => 'required',
             'biaya' => 'required|integer',
         ])) {
-            return redirect()->to(base_url('angkatan'))->withInput();
+            session()->setFlashdata('showModal', 'exampleModal');
+            return redirect()->to(base_url('angkatan'))->withInput()->with('validation', $this->validator);
         }
         $this->angkatan->save([
             "nama_angkatan" => $this->request->getVar('name'),
@@ -54,7 +60,8 @@ class Angkatan extends BaseController
             'name' => 'required',
             'biaya' => 'required|integer',
         ])) {
-            return redirect()->to(base_url('angkatan'))->withInput();
+            session()->setFlashdata('editModal', 'myModal');
+            return redirect()->to(base_url('angkatan'))->withInput()->with('validation', $this->validator);
         }
         $this->angkatan->save([
             "id_angkatan" => $id,
