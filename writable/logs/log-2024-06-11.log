@@ -1,0 +1,478 @@
+CRITICAL - 2024-06-11 13:39:34 --> ErrorException: Undefined variable $siswa
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 22.
+ 1 APPPATH\Views\siswa\siswa.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(22): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:42:13 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 27.
+ 1 APPPATH\Views\siswa\siswa.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(22): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:42:18 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 27.
+ 1 APPPATH\Views\siswa\siswa.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(22): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:52:10 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 27.
+ 1 APPPATH\Views\siswa\siswa.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(22): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:53:01 --> ErrorException: Undefined array key "nisn"
+[Method: GET, Route: angkatan]
+in APPPATH\Views\siswa\siswa.php on line 25.
+ 1 APPPATH\Views\siswa\siswa.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nisn"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(23): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:53:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:54:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:55:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:55:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:55:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:55:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:56:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:56:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 13:57:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "angkatan/angkatan.php"
+[Method: GET, Route: angkatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('angkatan/angkatan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 3 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 14:07:16 --> ErrorException: Undefined array key "IdMhsw"
+[Method: GET, Route: angkatan]
+in APPPATH\Views\angkatan\angkatan.php on line 29.
+ 1 APPPATH\Views\angkatan\angkatan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "IdMhsw"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\angkatan.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\angkatan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/angkatan', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(23): view('angkatan/angkatan')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:13:31 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:13:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:13:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:13:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:13:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:13:55 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:13:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:15:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:15:17 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:15:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:15:40 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-11 15:16:31 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: angkatan/editangkatan/undefined]
+in APPPATH\Views\angkatan\view.php on line 1.
+ 1 APPPATH\Views\angkatan\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\angkatan\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('angkatan/view', [], true)
+ 5 APPPATH\Controllers\Angkatan.php(48): view('angkatan/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Angkatan->getEditAngkatan('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Angkatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
