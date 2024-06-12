@@ -38,8 +38,9 @@
     </div>
 </div>
 
+
 <!-- Bootstrap core JavaScript-->
-<script src="<?= base_url() ?>vendor/jquery/jquery.min.js"></script>
+
 <script src="<?= base_url() ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
@@ -70,6 +71,10 @@
 <script src="<?= base_url() ?>js/demo/datatables-demo.js"></script>
 <script src="<?= base_url() ?>js/bootstrap.min.js"></script>
 <script src="<?= base_url() ?>js/popper.min.js"></script>
+
+
+
+
 
 </body>
 

@@ -16,7 +16,6 @@ class Angkatan extends BaseController
     }
     public function index()
     {
-        session();
         $data = [
             'title' => 'Angkatan',
             'dataAngkatan' => $this->angkatan->getAll(),
