@@ -510,3 +510,1076 @@ INFO - 2024-06-12 08:40:42 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-06-12 08:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-12 08:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-12 08:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 10:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 10:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 10:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 10:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 10:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 10:58:55 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: siswa/create]
+in SYSTEMPATH\BaseModel.php on line 1011.
+ 1 SYSTEMPATH\BaseModel.php(1011): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->update('20', [...])
+ 4 APPPATH\Controllers\Siswa.php(58): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->save()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:09:43 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: siswa/create]
+in SYSTEMPATH\BaseModel.php on line 1011.
+ 1 SYSTEMPATH\BaseModel.php(1011): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->update('20', [...])
+ 4 APPPATH\Controllers\Siswa.php(58): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->save()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:06 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:07 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:09 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:09 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:09 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:10 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:10 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:10 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:10 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:11 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:11 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:11 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:11 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:12 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:12 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:12 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:12 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:12 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:13 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:13 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:13 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:13 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:13 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:14 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:14 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:14 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:14 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:15 --> ErrorException: Undefined array key "angkatan"
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 76.
+ 1 APPPATH\Views\siswa\siswa.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "angkatan"', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:11:33 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: siswa/create]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Siswa.php(58): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->save()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:12:50 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: siswa/create]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Siswa.php(58): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->save()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-12 11:12:52 --> mysqli_sql_exception: Unknown column 'siswa.id_angkatan' in 'on clause' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Siswa->index()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-12 11:12:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'siswa.id_angkatan' in 'on clause'
+[Method: GET, Route: siswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:12:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'siswa.id_angkatan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:12:52 --> [Caused by] mysqli_sql_exception: Unknown column 'siswa.id_angkatan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-12 11:12:55 --> mysqli_sql_exception: Unknown column 'siswa.id_angkatan' in 'on clause' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Siswa->index()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-12 11:12:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'siswa.id_angkatan' in 'on clause'
+[Method: GET, Route: siswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:12:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'siswa.id_angkatan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:12:55 --> [Caused by] mysqli_sql_exception: Unknown column 'siswa.id_angkatan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-12 11:12:57 --> mysqli_sql_exception: Unknown column 'siswa.id_angkatan' in 'on clause' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Siswa->index()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-12 11:12:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'siswa.id_angkatan' in 'on clause'
+[Method: GET, Route: siswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:12:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'siswa.id_angkatan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:12:57 --> [Caused by] mysqli_sql_exception: Unknown column 'siswa.id_angkatan' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`id_angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`id_jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`id_kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Siswa.php(31): App\Models\Siswa_model->getAll()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:13:52 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: siswa/create]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Siswa.php(58): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->save()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-12 11:14:19 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: siswa/create]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Siswa.php(58): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->save()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 11:15:34 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: siswa/create]
+in SYSTEMPATH\BaseModel.php on line 826.
+ 1 SYSTEMPATH\BaseModel.php(826): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Siswa.php(58): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->save()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 11:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 11:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 12:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:01:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: siswa/editsiswa/undefined]
+in APPPATH\Views\siswa\view.php on line 1.
+ 1 APPPATH\Views\siswa\view.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\view.php', 1)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\siswa\\view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/view', [], true)
+ 5 APPPATH\Controllers\Siswa.php(114): view('siswa/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->getEditSiswa('undefined')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 13:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:06:07 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 70.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 13:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 13:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:07:16 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 70.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 13:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:07:47 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 70.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 13:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 13:08:04 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 70.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 14:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 14:02:17 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 70.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 14:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 14:03:14 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 70.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 14:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 14:03:58 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 72.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(38): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 14:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 14:06:16 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: siswa]
+in APPPATH\Views\siswa\siswa.php on line 70.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('siswa/siswa', [], true)
+ 4 APPPATH\Controllers\Siswa.php(40): view('siswa/siswa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-12 14:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

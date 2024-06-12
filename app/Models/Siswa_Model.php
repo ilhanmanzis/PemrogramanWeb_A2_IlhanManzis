@@ -8,7 +8,7 @@ class Siswa_model extends Model
 {
     protected $table = 'siswa';
     protected $primaryKey = 'id_siswa';
-    protected $allowedFields = ['nisn', 'nama', 'id_angkatan', 'id_jurusan', 'id_kelas', 'alamat'];
+    protected $allowedFields = ['nisn', 'nama', 'angkatan', 'jurusan', 'kelas', 'alamat'];
 
 
     public function rules()
@@ -22,16 +22,16 @@ class Siswa_model extends Model
                 'label' => 'nama',
                 'rules' => 'trim|required'
             ],
-            'id_angkatan' => [
-                'label' => 'id_angkatan',
+            'angkatan' => [
+                'label' => 'angkatan',
                 'rules' => 'trim|required'
             ],
-            'id_jurusan' => [
-                'label' => 'id_jurusan',
+            'jurusan' => [
+                'label' => 'jurusan',
                 'rules' => 'trim|required'
             ],
-            'id_kelas' => [
-                'label' => 'id_kelas',
+            'kelas' => [
+                'label' => 'kelas',
                 'rules' => 'trim|required'
             ],
             'alamat' => [
@@ -43,11 +43,31 @@ class Siswa_model extends Model
 
     public function getAll()
     {
-        return $this->orderBy('id_siswa', 'ASC')->findAll();
+        return $this->select('siswa.*, angkatan.*, jurusan.*, kelas.*')
+            ->join('angkatan', 'siswa.angkatan = angkatan.id_angkatan')
+            ->join('jurusan', 'siswa.jurusan = jurusan.id_jurusan')
+            ->join('kelas', 'siswa.kelas = kelas.id_kelas')
+            ->orderBy('id_siswa', 'ASC')
+            ->findAll();
     }
 
     public function getById($id)
     {
-        return $this->where(['id_siswa' => $id])->first();
+        return $this->select('siswa.*, angkatan.*, jurusan.*, kelas.*')
+            ->join('angkatan', 'siswa.angkatan = angkatan.id_angkatan')
+            ->join('jurusan', 'siswa.jurusan = jurusan.id_jurusan')
+            ->join('kelas', 'siswa.kelas = kelas.id_kelas')
+            ->where(['id_siswa' => $id])
+            ->first();
+    }
+
+    public function getByNisn($nisn)
+    {
+        return $this->select('siswa.*, angkatan.*, jurusan.*, kelas.*')
+            ->join('angkatan', 'siswa.angkatan = angkatan.id_angkatan')
+            ->join('jurusan', 'siswa.jurusan = jurusan.id_jurusan')
+            ->join('kelas', 'siswa.kelas = kelas.id_kelas')
+            ->where(['nisn' => $nisn])
+            ->first();
     }
 }

@@ -6,8 +6,14 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('/siswa', 'Siswa::index');
 
+
+//siswa
+$routes->get('/siswa', 'Siswa::index');
+$routes->post('/siswa/create', 'Siswa::save');
+$routes->get('/siswa/editsiswa/(:any)', 'Siswa::getEditSiswa/$1');
+$routes->post('/siswa/edit/(:any)', 'Siswa::update/$1');
+$routes->delete('/siswa/delete/(:any)', 'Siswa::delete/$1');
 
 // angkatan
 $routes->get('/angkatan', 'Angkatan::index');
