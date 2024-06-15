@@ -10,3 +10,19 @@ Assalamualaikum wr wb. ini adalah project terakhir kami dari mata kuliah Pemrogr
 untuk link video menyusul 
 
 [yt](https://youtube.com)
+
+
+
+## installation
+sebelum menjalankan, ikuti langkah berikut ini
+1. copy file "env" menjadi ".env"
+   ```
+   cp env .env
+2. jalankan perintah berikut pada terminal
+   - membuat database
+     ```
+     php db:create spp
+   - migration
+     ```
+     php spark migrate
+
