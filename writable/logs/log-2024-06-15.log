@@ -1,0 +1,366 @@
+ERROR - 2024-06-15 05:13:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'spp', 3306, '', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Siswa.php(164): App\Models\Siswa_model->getAll()
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Siswa->dataSiswa()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#3 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ci_spp\app\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ci_spp\app\Controllers\Siswa.php(164): App\Models\Siswa_model->getAll()
+#7 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Siswa->dataSiswa()
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-15 05:13:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: datasiswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Siswa.php(164): App\Models\Siswa_model->getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->dataSiswa()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 05:14:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'spp', 3306, '', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Siswa.php(164): App\Models\Siswa_model->getAll()
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Siswa->dataSiswa()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#3 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ci_spp\app\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ci_spp\app\Controllers\Siswa.php(164): App\Models\Siswa_model->getAll()
+#7 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Siswa->dataSiswa()
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-15 05:14:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: datasiswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+ORDER BY `id_siswa` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Siswa_Model.php(51): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Siswa.php(164): App\Models\Siswa_model->getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Siswa->dataSiswa()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 05:14:19 --> mysqli_sql_exception: Not unique table/alias: 'pembayaran' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `pembaya...', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembaya...')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembaya...')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembaya...', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(56): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Pembayaran.php(20): App\Models\Pembayaran_model->search('79878')
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-15 05:14:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+[Method: GET, Route: pembayaran]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = :siswa.nisn:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\Pembayaran_model.php(56): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Pembayaran.php(20): App\Models\Pembayaran_model->search('79878')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 05:14:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = \'79878\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = \'79878\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = :siswa.nisn:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\Pembayaran_model.php(56): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Pembayaran.php(20): App\Models\Pembayaran_model->search('79878')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 05:14:19 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = \'79878\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = \'79878\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = \'79878\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `angkatan`.*, `jurusan`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `angkatan` ON `siswa`.`angkatan` = `angkatan`.`id_angkatan`
+JOIN `jurusan` ON `siswa`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `siswa`.`nisn` = :siswa.nisn:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\Pembayaran_model.php(56): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Pembayaran.php(20): App\Models\Pembayaran_model->search('79878')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 05:32:54 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: pembayaran]
+in APPPATH\Views\pembayaran\pembayaran.php on line 8.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembayaran/pembayaran', [], true)
+ 4 APPPATH\Controllers\Pembayaran.php(47): view('pembayaran/pembayaran', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 05:33:22 --> Error: Call to undefined function validation_show_error()
+[Method: GET, Route: pembayaran]
+in APPPATH\Views\pembayaran\pembayaran.php on line 8.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembayaran/pembayaran', [], true)
+ 4 APPPATH\Controllers\Pembayaran.php(48): view('pembayaran/pembayaran', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-15 05:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-15 05:36:39 --> ErrorException: Undefined variable $nisn
+[Method: GET, Route: pembayaran]
+in APPPATH\Views\pembayaran\dataKosong.php on line 3.
+ 1 APPPATH\Views\pembayaran\dataKosong.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nisn', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\pembayaran\\dataKosong.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\pembayaran\\dataKosong.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembayaran/dataKosong', [], true)
+ 5 APPPATH\Controllers\Pembayaran.php(37): view('pembayaran/dataKosong', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-15 05:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-15 05:42:47 --> ErrorException: Undefined variable $nisnSiswa
+[Method: GET, Route: pembayaran]
+in APPPATH\Views\pembayaran\pembayaran.php on line 8.
+ 1 APPPATH\Views\pembayaran\pembayaran.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nisnSiswa', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\pembayaran\\pembayaran.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\pembayaran\\pembayaran.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembayaran/pembayaran', [], true)
+ 5 APPPATH\Controllers\Pembayaran.php(58): view('pembayaran/pembayaran')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-15 05:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-15 05:47:49 --> ErrorException: Undefined variable $i
+[Method: GET, Route: pembayaran]
+in APPPATH\Views\pembayaran\dataPembayaran.php on line 35.
+ 1 APPPATH\Views\pembayaran\dataPembayaran.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\ci_spp\\app\\Views\\pembayaran\\dataPembayaran.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci_spp\\app\\Views\\pembayaran\\dataPembayaran.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembayaran/dataPembayaran', [], true)
+ 5 APPPATH\Controllers\Pembayaran.php(50): view('pembayaran/dataPembayaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-15 05:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 05:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 06:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

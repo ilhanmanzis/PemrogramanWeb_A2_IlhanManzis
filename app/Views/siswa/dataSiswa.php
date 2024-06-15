@@ -16,7 +16,16 @@
                     </tr>
                 </thead>
                 <tbody>
-
+                    <?php foreach ($dataSiswa as $row) : ?>
+                        <tr>
+                            <td><?= $row['nisn'] ?></td>
+                            <td><?= $row['nama'] ?></td>
+                            <td><?= $row['nama_angkatan'] ?></td>
+                            <td><?= $row['nama_jurusan'] ?></td>
+                            <td><?= $row['nama_kelas'] ?></td>
+                            <td><?= $row['alamat'] ?></td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

@@ -10,6 +10,7 @@ $routes->get('/', 'Home::index');
 
 //siswa
 $routes->get('/siswa', 'Siswa::index');
+$routes->get('/datasiswa', 'Siswa::dataSiswa');
 $routes->post('/siswa/create', 'Siswa::save');
 $routes->get('/siswa/editsiswa/(:any)', 'Siswa::getEditSiswa/$1');
 $routes->post('/siswa/edit/(:any)', 'Siswa::update/$1');
@@ -35,3 +36,7 @@ $routes->get('/kelas/editkelas/(:any)', 'Kelas::getEditKelas/$1');
 $routes->delete('/kelas/delete/(:any)', 'Kelas::delete/$1');
 $routes->post('/kelas/create', 'Kelas::save');
 $routes->post('/kelas/edit/(:any)', 'Kelas::update/$1');
+
+// pembayaran
+$routes->get('/pembayaran', 'Pembayaran::index');
+$routes->get('/prosestransaksi', 'Pembayaran::prosesTransaksi');

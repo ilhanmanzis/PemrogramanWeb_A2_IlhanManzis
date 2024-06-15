@@ -44,4 +44,13 @@ class Pembayaran_model extends Model
             ]
         ];
     }
+
+    public function getById($id)
+    {
+        return $this->where('id_pembayaran', $id)->first();
+    }
+    public function search($idSiswa)
+    {
+        return $this->where('siswa', $idSiswa)->orderBy('jatuhtempo', 'ASC')->findAll();
+    }
 }

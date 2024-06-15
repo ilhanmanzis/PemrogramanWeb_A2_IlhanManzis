@@ -155,4 +155,16 @@ class Siswa extends BaseController
         session()->setFlashdata('message', 'Data Berhasil dihapus.');
         return redirect()->to(base_url('kelas'));
     }
+
+
+    public function dataSiswa()
+    {
+        $data = [
+            'title' => 'Siswa',
+            'dataSiswa' => $this->siswa->getAll(),
+        ];
+        echo view('templates/header', $data);
+        echo view('siswa/dataSiswa', $data);
+        echo view('templates/footer');
+    }
 }
