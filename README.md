@@ -16,7 +16,7 @@ untuk link video menyusul
 
 sebelum menjalankan, ikuti langkah berikut ini
 
-1. copy file "env" menjadi ".env"
+1. duplikat file "env" kemudian rename file duplikat menjadi ".env"
    ```
    cp env .env
    ```
