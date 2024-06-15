@@ -40,3 +40,10 @@ $routes->post('/kelas/edit/(:any)', 'Kelas::update/$1');
 // pembayaran
 $routes->get('/pembayaran', 'Pembayaran::index');
 $routes->get('/prosestransaksi', 'Pembayaran::prosesTransaksi');
+$routes->get('/cetaksemuatranskasi', 'Pembayaran::cetakSemuaTransaksi');
+$routes->get('/cetaksliptransaksi', 'Pembayaran::cetakSlipTransaksi');
+
+
+//laporan
+$routes->get('/laporan', 'Laporan::index');
+$routes->post('/cetaklaporan', 'Laporan::cetakLaporan');

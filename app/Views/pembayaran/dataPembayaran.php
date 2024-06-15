@@ -6,7 +6,7 @@
                     <h6 class="m-0 font-weight-bold text-primary pt-2">Data Pembayaran</h6>
                 </td>
                 <td>
-                    <a class='btn btn-success btn mb-0' href='/cetaksemuatransaksi?nisn=<?= $dataSiswa['nisn'] ?>' target='_blank'>Cetak Semua</a>
+                    <a class='btn btn-success btn mb-0' href='<?= base_url() ?>cetaksemuatranskasi?nisn=<?= $dataSiswa['nisn'] ?>' target='_blank'>Cetak Semua</a>
                 </td>
             </tr>
         </table>
@@ -41,11 +41,11 @@
                             <td><?= $pembayaran['ket'] ?></td>
                             <td>
                                 <?php if ($pembayaran['nobayar'] == '') { ?>
-                                    <a class="btn btn-primary btn-sm" href="/prosestransaksi?nisn=<?= $dataSiswa['nisn'] ?>&id=<?= $pembayaran['id_pembayaran'] ?>">Bayar</a>
+                                    <a class="btn btn-primary btn-sm" href="<?= base_url() ?>prosestransaksi?nisn=<?= $dataSiswa['nisn'] ?>&id=<?= $pembayaran['id_pembayaran'] ?>">Bayar</a>
                                 <?php } else {
                                 ?>
-                                    <a class='btn btn-danger btn-sm mr-1' href='/prosestransaksi?nisn=<?= $dataSiswa['nisn'] ?>&id=<?= $pembayaran['id_pembayaran'] ?>'>Batal</a>
-                                    <a class='btn btn-success btn-sm' href='/cetaksliptransaksi?nisn=<?= $dataSiswa['nisn'] ?>&id=<?= $pembayaran['id_pembayaran'] ?>' target='_blank'>Cetak</a>
+                                    <a class='btn btn-danger btn-sm mr-1' href='<?= base_url() ?>prosestransaksi?nisn=<?= $dataSiswa['nisn'] ?>&id=<?= $pembayaran['id_pembayaran'] ?>'>Batal</a>
+                                    <a class='btn btn-success btn-sm' href='<?= base_url() ?>cetaksliptransaksi?nisn=<?= $dataSiswa['nisn'] ?>&id=<?= $pembayaran['id_pembayaran'] ?>' target='_blank'>Cetak</a>
                                 <?php } ?>
 
                             </td>

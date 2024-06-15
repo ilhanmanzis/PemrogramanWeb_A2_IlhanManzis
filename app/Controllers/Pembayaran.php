@@ -97,4 +97,44 @@ class Pembayaran extends BaseController
             return redirect()->to(base_url("pembayaran?nisn=$nisn"));
         }
     }
+
+    public function cetakSemuaTransaksi()
+    {
+        $nisn = $this->request->getGet('nisn');
+        $dataSiswa = $this->siswa->getByNisn($nisn);
+        if (!$dataSiswa) {
+            return redirect()->to(base_url('pembayaran'));
+        }
+        $dataPembayaran = $this->pembayaran->searchCetak($dataSiswa['id_siswa']);
+        if (!$dataPembayaran) {
+            return redirect()->to(base_url('pembayaran'));
+        }
+
+        $data = [
+            'dataSiswa' => $dataSiswa,
+            'dataPembayaran' => $dataPembayaran,
+        ];
+        echo view('pembayaran/cetakSemuaTransaksi', $data);
+    }
+
+    public function cetakSlipTransaksi()
+    {
+        $nisn = $this->request->getGet('nisn');
+        $dataSiswa = $this->siswa->getByNisn($nisn);
+        if (!$dataSiswa) {
+            return redirect()->to(base_url('pembayaran'));
+        }
+        $idPembayaran = $this->request->getGet('id');
+        $dataPembayaran = $this->pembayaran->getById($idPembayaran);
+        if (!$dataPembayaran) {
+            return redirect()->to(base_url('pembayaran'));
+        }
+
+        $data = [
+            'dataSiswa' => $dataSiswa,
+            'dataPembayaran' => $dataPembayaran,
+        ];
+
+        echo view('pembayaran/cetakSlipTransaksi', $data);
+    }
 }

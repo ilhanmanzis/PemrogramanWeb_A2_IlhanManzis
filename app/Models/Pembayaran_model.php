@@ -53,4 +53,22 @@ class Pembayaran_model extends Model
     {
         return $this->where('siswa', $idSiswa)->orderBy('jatuhtempo', 'ASC')->findAll();
     }
+
+    public function searchCetak($idSiswa)
+    {
+        return $this->where('siswa', $idSiswa)->where('ket', 'LUNAS')->orderBy('jatuhtempo', 'ASC')->findAll();
+    }
+
+    public function getLunas()
+    {
+        return $this->where('ket', 'LUNAS')->findAll();
+    }
+
+    public function getLaporan($awal, $akhir)
+    {
+        return $this->db->query("SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.siswa = siswa.id_siswa AND kelas.id_kelas = siswa.kelas AND tglbayar BETWEEN :awal: AND :akhir: ORDER BY nobayar", [
+            'awal' => $awal,
+            'akhir' => $akhir
+        ])->getResultArray();
+    }
 }

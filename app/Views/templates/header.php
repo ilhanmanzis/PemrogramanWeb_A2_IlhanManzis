@@ -121,7 +121,7 @@
                 </a>
                 <div id="collapsePages1" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="laporan.php">Cetak Laporan</a>
+                        <a class="collapse-item" href="<?= base_url('laporan') ?>">Cetak Laporan</a>
 
                     </div>
                 </div>

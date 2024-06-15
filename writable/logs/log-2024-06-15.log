@@ -447,3 +447,1121 @@ INFO - 2024-06-15 09:31:41 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-06-15 09:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-15 09:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-15 09:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-15 10:28:34 --> Error: Class "Date" not found
+[Method: GET, Route: cetaksemuatranskasi]
+in APPPATH\Views\pembayaran\cetakSemuaTransaksi.php on line 96.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembayaran/cetakSemuaTransaksi', [], true)
+ 4 APPPATH\Controllers\Pembayaran.php(117): view('pembayaran/cetakSemuaTransaksi', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->cetakSemuaTransaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 10:28:47 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: cetaksemuatranskasi]
+in APPPATH\Views\pembayaran\cetakSemuaTransaksi.php on line 96.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pembayaran/cetakSemuaTransaksi', [], true)
+ 3 APPPATH\Controllers\Pembayaran.php(117): view('pembayaran/cetakSemuaTransaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pembayaran->cetakSemuaTransaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pembayaran))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+INFO - 2024-06-15 10:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-15 10:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-15 11:42:52 --> mysqli_sql_exception: Not unique table/alias: 'pembayaran' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `pembaya...', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembaya...')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembaya...')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembaya...', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('', '')
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-15 11:42:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:42:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'\'
+AND `tglbayar` <= \'\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'\'
+AND `tglbayar` <= \'\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('', '')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:42:52 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'\'
+AND `tglbayar` <= \'\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'\'
+AND `tglbayar` <= \'\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'\'
+AND `tglbayar` <= \'\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('', '')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:43:09 --> mysqli_sql_exception: Not unique table/alias: 'pembayaran' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `pembaya...', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembaya...')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembaya...')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembaya...', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-15 11:43:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:43:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:43:09 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `pembayaran`.*, `siswa`.*, `kelas`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:44:04 --> mysqli_sql_exception: Not unique table/alias: 'pembayaran' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-15 11:44:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:44:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:44:04 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:44:10 --> mysqli_sql_exception: Not unique table/alias: 'pembayaran' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-15 11:44:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:44:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:44:10 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:45:23 --> mysqli_sql_exception: Not unique table/alias: 'pembayaran' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-15 11:45:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:45:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:45:23 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:45:53 --> mysqli_sql_exception: Not unique table/alias: 'pembayaran' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#9 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-15 11:45:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:45:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:45:53 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'pembayaran'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `pembayaran`.*
+FROM `pembayaran`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Pembayaran_model.php(75): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:47:17 --> mysqli_sql_exception: Unknown table 'spp.siswa' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#6 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#7 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-06-15 11:47:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'spp.siswa'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:47:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'spp.siswa'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:47:17 --> [Caused by] mysqli_sql_exception: Unknown table 'spp.siswa'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `kelas`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `pembayaran` ON `pembayaran`.`siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `siswa`.`kelas` = `kelas`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:49:19 --> mysqli_sql_exception: Unknown column 'p.id_siswa' in 'on clause' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `s`.*, `...', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `...')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `...')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `...', Array, false)
+#4 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#6 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#7 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-06-15 11:49:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id_siswa' in 'on clause'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= :p.tglbayar:
+AND `p`.`tglbayar` <= :p.tglbayar.1:
+ORDER BY `p`.`nobayar` ASC', [...], false)
+ 2 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:49:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= \'2024-06-15\'
+AND `p`.`tglbayar` <= \'2024-06-15\'
+ORDER BY `p`.`nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= \'2024-06-15\'
+AND `p`.`tglbayar` <= \'2024-06-15\'
+ORDER BY `p`.`nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= :p.tglbayar:
+AND `p`.`tglbayar` <= :p.tglbayar.1:
+ORDER BY `p`.`nobayar` ASC', [...], false)
+ 4 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:49:19 --> [Caused by] mysqli_sql_exception: Unknown column 'p.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= \'2024-06-15\'
+AND `p`.`tglbayar` <= \'2024-06-15\'
+ORDER BY `p`.`nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= \'2024-06-15\'
+AND `p`.`tglbayar` <= \'2024-06-15\'
+ORDER BY `p`.`nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= \'2024-06-15\'
+AND `p`.`tglbayar` <= \'2024-06-15\'
+ORDER BY `p`.`nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `k`.*, `p`.*
+FROM `pembayaran` AS `p`
+JOIN `siswa` AS `s` ON `p`.`id_siswa` = `s`.`id_siswa`
+JOIN `kelas` AS `k` ON `s`.`id_kelas` = `k`.`id_kelas`
+WHERE `p`.`tglbayar` >= :p.tglbayar:
+AND `p`.`tglbayar` <= :p.tglbayar.1:
+ORDER BY `p`.`nobayar` ASC', [...], false)
+ 5 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:51:34 --> mysqli_sql_exception: Unknown column 'pembayaran.id_siswa' in 'on clause' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\ci_spp\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#6 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#7 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-06-15 11:51:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pembayaran.id_siswa' in 'on clause'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 2 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:51:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pembayaran.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 4 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:51:34 --> [Caused by] mysqli_sql_exception: Unknown column 'pembayaran.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= \'2024-06-15\'
+AND `tglbayar` <= \'2024-06-15\'
+ORDER BY `nobayar` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.*, `pembayaran`.*, `kelas`.*
+FROM `siswa`
+JOIN `pembayaran` ON `pembayaran`.`id_siswa` = `siswa`.`id_siswa`
+JOIN `kelas` ON `kelas`.`id_kelas` = `siswa`.`id_kelas`
+WHERE `tglbayar` >= :tglbayar:
+AND `tglbayar` <= :tglbayar.1:
+ORDER BY `nobayar` ASC', [...], false)
+ 5 APPPATH\Models\Pembayaran_model.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+ERROR - 2024-06-15 11:58:11 --> mysqli_sql_exception: Unknown column 'pembayaran.id_siswa' in 'where clause' in C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\ci_spp\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT siswa.*,...', 0)
+#1 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.*,...')
+#2 C:\xampp\htdocs\ci_spp\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.*,...')
+#3 C:\xampp\htdocs\ci_spp\app\Models\Pembayaran_model.php(69): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*,...', Array)
+#4 C:\xampp\htdocs\ci_spp\app\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+#5 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+#6 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#7 C:\xampp\htdocs\ci_spp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci_spp\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci_spp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\ci_spp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\ci_spp\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-15 11:58:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pembayaran.id_siswa' in 'where clause'
+[Method: POST, Route: cetaklaporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\Pembayaran_model.php(69): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN :awal: AND :akhir: ORDER BY nobayar', [...])
+ 2 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:58:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pembayaran.id_siswa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN \'2024-06-15\' AND \'2024-06-15\' ORDER BY nobayar')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN \'2024-06-15\' AND \'2024-06-15\' ORDER BY nobayar')
+ 3 APPPATH\Models\Pembayaran_model.php(69): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN :awal: AND :akhir: ORDER BY nobayar', [...])
+ 4 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:58:11 --> [Caused by] mysqli_sql_exception: Unknown column 'pembayaran.id_siswa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN \'2024-06-15\' AND \'2024-06-15\' ORDER BY nobayar', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN \'2024-06-15\' AND \'2024-06-15\' ORDER BY nobayar')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN \'2024-06-15\' AND \'2024-06-15\' ORDER BY nobayar')
+ 4 APPPATH\Models\Pembayaran_model.php(69): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*, pembayaran.*, kelas.* FROM siswa, pembayaran, kelas WHERE pembayaran.id_siswa = siswa.id_siswa AND kelas.id_kelas = siswa.id_kelas AND tglbayar BETWEEN :awal: AND :akhir: ORDER BY nobayar', [...])
+ 5 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:58:35 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: cetaklaporan]
+in APPPATH\Views\laporan\cetakLaporan.php on line 48.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan/cetakLaporan', [], true)
+ 4 APPPATH\Controllers\Laporan.php(38): view('laporan/cetakLaporan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
+CRITICAL - 2024-06-15 11:58:59 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::findAll()
+[Method: POST, Route: cetaklaporan]
+in APPPATH\Models\Pembayaran_model.php on line 72.
+ 1 APPPATH\Controllers\Laporan.php(30): App\Models\Pembayaran_model->getLaporan('2024-06-15', '2024-06-15')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->cetakLaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\ci_spp\\public\\index.php')
