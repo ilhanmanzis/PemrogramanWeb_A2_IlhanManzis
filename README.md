@@ -18,11 +18,16 @@ sebelum menjalankan, ikuti langkah berikut ini
 1. copy file "env" menjadi ".env"
    ```
    cp env .env
-2. jalankan perintah berikut pada terminal
+2. buka file ".env", isi yang diperlukan
+3. jalankan perintah berikut pada terminal
    - membuat database
      ```
      php db:create spp
    - migration
      ```
      php spark migrate
+
+4. untuk menjalankan servernya
+   ```
+   php spark serve
 
