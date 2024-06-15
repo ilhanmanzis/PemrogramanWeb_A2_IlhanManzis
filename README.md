@@ -30,3 +30,6 @@ sebelum menjalankan, ikuti langkah berikut ini
 4. untuk menjalankan servernya
    ```
    php spark serve
+
+untuk yang menggunakan xampp, buka file ".env". pada bagian "app.baseURL" ubah menjadi link yang mengarah ke folder project anda yang ada didalam htdocs
+contoh "app.baseURL = 'http://localhost/ci/public/' "
