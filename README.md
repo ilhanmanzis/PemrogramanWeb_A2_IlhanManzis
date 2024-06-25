@@ -5,18 +5,19 @@
 1. Ilhan Manzis (12221938)
 2. Muhammad Nur Falak M (12221923)
 3. Akbar Zakaria (12221889)
+4. Hasan Ibrahim Sansyah (12221921)
 
 Assalamualaikum wr wb. ini adalah project terakhir kami dari mata kuliah Pemrogramman Web. kami membuat website pembayaran spp sekolah dengan menggunakan framework PHP Code Igniter 4 dan database MySql.
 
-untuk link video menyusul
+berikut link videonya :
 
-[yt](https://youtube.com)
+[video presentasi](https://youtu.be/K1WQ34nslok)
 
 ## installation
 
 sebelum menjalankan, ikuti langkah berikut ini
 
-1. copy file "env" menjadi ".env"
+1. duplikat file "env" kemudian rename file duplikat menjadi ".env"
    ```
    cp env .env
    ```
