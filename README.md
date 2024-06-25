@@ -11,7 +11,7 @@ Assalamualaikum wr wb. ini adalah project terakhir kami dari mata kuliah Pemrogr
 
 berikut link videonya :
 
-[link video](https://youtu.be/K1WQ34nslok)
+[video presentasi](https://youtu.be/K1WQ34nslok)
 
 ## installation
 
