@@ -50,6 +50,7 @@ app.baseURL = 'http://localhost:8080/'
 
 #--------------------------------------------------------------------
 
+
 database.default.hostname = localhost
 database.default.database = spp
 database.default.username = root
