@@ -42,6 +42,7 @@ class Toolbar extends BaseConfig
         Files::class,
         Routes::class,
         Events::class,
+        \Myth\Auth\Collectors\Auth::class,
     ];
 
     /**
@@ -117,6 +118,12 @@ class Toolbar extends BaseConfig
      * @var list<string>
      */
     public array $watchedExtensions = [
-        'php', 'css', 'js', 'html', 'svg', 'json', 'env',
+        'php',
+        'css',
+        'js',
+        'html',
+        'svg',
+        'json',
+        'env',
     ];
 }
