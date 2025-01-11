@@ -106,3 +106,5 @@ database.default.port = 3306
 
 email.fromEmail=default@example.com
 email.fromName="name email"
+email.SMTPUser=default@example.com
+email.SMTPPass=
