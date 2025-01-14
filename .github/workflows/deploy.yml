@@ -15,7 +15,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 400 ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H "${{ secrets.EC2_IP }}" >> ~/.ssh/known_hosts
 
       # Step 2: Pull latest code on EC2
