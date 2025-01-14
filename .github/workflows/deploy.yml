@@ -23,7 +23,7 @@ jobs:
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_IP }} "
           cd /var/www/html/spp && 
-          git pull origin main 
+          git pull 
           "
 
       # Step 3: Restart Web Server (opsional)
