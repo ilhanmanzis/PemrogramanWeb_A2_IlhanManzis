@@ -18,15 +18,23 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H "${{ secrets.EC2_IP }}" >> ~/.ssh/known_hosts
 
-      # Step 2: Pull latest code on EC2
+      # Step 2: Configure Git Safe Directory
+      - name: Configure Git Safe Directory
+        run: |
+          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_IP }} "
+          git config --global --add safe.directory /var/www/html/spp
+          "
+
+      # Step 3: Pull latest code on EC2
       - name: Deploy Code to EC2
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_IP }} "
           cd /var/www/html/spp && 
-          git pull 
+          git pull origin main &&
+          php spark cache:clear
           "
 
-      # Step 3: Restart Web Server (opsional)
+      # Step 4: Restart Web Server (optional)
       - name: Restart Web Server
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_IP }} "sudo systemctl restart apache2"
