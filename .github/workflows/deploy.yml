@@ -30,8 +30,7 @@ jobs:
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_IP }} "
           cd /var/www/html/spp && 
-          sudo git pull origin main &&
-          php spark cache:clear
+          sudo git pull origin main
           "
 
       # Step 4: Restart Web Server (optional)
