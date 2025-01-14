@@ -9,6 +9,12 @@ class Email extends BaseConfig
     public string $fromEmail  = '';
     public string $fromName   = '';
     public string $recipients = '';
+    public function __construct()
+    {
+        // Ambil nilai dari .env
+        $this->fromEmail = env('email.fromEmail', '');
+        $this->fromName  = env('email.fromName', '');
+    }
 
     /**
      * The "user agent"

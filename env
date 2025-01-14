@@ -103,3 +103,6 @@ database.default.port = 3306
 #--------------------------------------------------------------------
 
 # logger.threshold = 4
+
+email.fromEmail=default@example.com
+email.fromName="name email"
