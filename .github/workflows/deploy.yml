@@ -22,7 +22,7 @@ jobs:
       - name: Deploy Code to EC2
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_IP }} "
-          cd /var/www/html && 
+          cd /var/www/html/spp && 
           git pull origin main 
           "
 
